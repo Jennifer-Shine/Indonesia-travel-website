@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Indonesia Travel Journey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-margin-top: 30px;
+        }
+        .hero-banner{
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('src/beach-sunset.jpg');
+            background-size: cover;
+            background-position:center;
+            color:black;
+            padding:140px 0;
+        }
+        .card{
+            transition: 0.3s ease all;
+            border-radius:12px;
+            overflow:hidden;
+        }
+        .card:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px #00000020;
+        }
+        .section-heading{
+            color:rgb(220, 110, 195);
+            font-weight:700;
+        }
+        body{
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .gallery-img{
+            height:400px;
+            object-fit:cover;
+            width:100%;
+            border-radius:8px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Fixed Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:rgb(51, 154, 133);">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-5" href="#">Indonesia Travel Journey</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#story">My Trip Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Photo Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Travel Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Top Hero Banner (Cover: your Kuta sunset beach photo, rename pic as beach-sunset.jpg) -->
+<section id="home" class="hero-banner text-center" style="background-color: rgb(240, 226, 236);">
+    <div class="container">
+        <h1 class="display-4 fw-bold">My Incredible Trip to Indonesia (Bali)</h1>
+        <p class="lead mt-3 w-75 mx-auto">From airport departure, Kuta beach coastline to Ubud jungle rice terrace & traditional Balinese culture, all my unforgettable travel moments</p>
+        <a href="#story" class="btn btn-light fw-bold mt-4 px-5 py-2">Read My Journey</a>
+    </div>
+</section>
+
+<!-- My Full Travel Story -->
+<section id="story" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 section-heading">My Travel Story & Journey</h2>
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <p class="fs-6 lh-lg">
+                    I departed from Cambodia and flew to Singapore before taking another flight to Bali, Indonesia, to begin the trip I had been looking forward to for a long time.
+                   <br><br>
+                    My first destination was the famous Kuta Beach. I enjoyed the blue ocean, the soft sandy shore, and the breathtaking sunset over the sea. Later, I traveled inland to Ubud, where I explored the world-famous rice terraces surrounded by lush tropical forests. I also tried the exciting jungle swing, which offered a panoramic view of the valley, and visited ancient Balinese temples decorated with beautiful stone carvings.
+                    <br><br>
+                    Besides visiting scenic attractions, I also experienced the local lifestyle. I strolled through the city streets at night, tasted a variety of fresh seafood, Western-style steaks, and traditional Indonesian dishes. I relaxed at a resort with a private swimming pool and enjoyed cold drinks from Starbucks while exploring the city.
+                    <br><br>
+                    The warm hospitality of the local people, the unique Southeast Asian culture, and the stunning natural landscapes made this trip truly special and unforgettable. It was a valuable experience that I will always cherish.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3 Core Destination Cards (Your 3 main travel themes) -->
+<section id="destinations" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 section-heading">Top Destinations I Visited</h2>
+        <div class="row g-4">
+            <!-- Card 1:Kuta Beach (Coastal Trip) -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/src/ee.jpg" class="card-img-top" style="height:300px;object-fit:cover;">
+                    <div class="card-body p-4">
+                        <h4 class="section-heading">Kuta Beach, Bali</h4>
+                        <p>
+                            Iconic coastal landmark of Bali, crystal clear turquoise seawater, soft sand beach with beach umbrellas and surf lovers. I spent whole afternoon enjoying sea breeze, watched gorgeous gradient sunset dyed sky orange and purple after dusk, and took night shot at Kuta Beach landmark signboard.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card2:Ubud Rice Terraces & Jungle -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/src/bb.jpg" class="card-img-top" style="height:300px;object-fit:cover;">
+                    <div class="card-body p-4">
+                        <h4 class="section-heading">Ubud Tropical Rice Terraces</h4>
+                        <p>
+                            Nestled in Ubud’s rainforest valley, tiered green rice fields surrounded by towering coconut palm trees. I experienced famous jungle swing hanging above valley, overlooking rolling terraced landscape, and visited antique Balinese stone temple with delicate traditional sculpture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card3:Indonesian Food & Resort Life -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/src/dd.jpg" class="card-img-top" style="height:300px;object-fit:cover;">
+                    <div class="card-body p-4">
+                        <h4 class="section-heading">Local Food & Resort Leisure</h4>
+                        <p>
+                            Tried luxurious seafood platter with fresh lobster & oyster, western grilled steak and creamy mushroom pasta. I also stayed at tropical garden resort with private pool surrounded by dense green plants and palm trees, enjoyed slow relaxing holiday vibe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Extra Travel Photo Gallery -->
+<section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 section-heading">My Travel Photo Gallery</h2>
+        <div class="row g-3">
+            <div class="col-md-3"><img src="/src/a.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/b.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/c.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/d.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/e.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/f.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/g1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/h.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/i1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/j.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/k.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/l1.jpg" class="gallery-img"></div>
+        </div>
+        <div class="row g-3 mt-3" id="hiddenGallery" style="display: none;">
+            <div class="col-md-3"><img src="/src/m.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/n.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/p.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/q1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/r.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/s1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/t.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/u.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/v1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/w1.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/x.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/y.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/z.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/aa.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/ff.jpg" class="gallery-img"></div>
+            <div class="col-md-3"><img src="/src/hh1.jpg" class="gallery-img"></div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="viewAllBtn" class="btn btn-primary">View all photo</button>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Blog -->
+ <section id="blog" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 section-heading">My Travel Blog</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <video 
+                        class="w-100"
+                        controls
+                        playsinline
+                        style="
+                            border-radius: 8px;
+                            aspect-ratio: 16 / 9;
+                            object-fit: cover;
+                        ">
+                        <source src="/travel blog.MOV" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Inquiry Form -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 section-heading">Contact & Travel Inquiry</h2>
+        <p class="text-center mb-4">If you plan to travel to Bali Indonesia, leave your questions below!</p>
+        <div class="col-md-6 mx-auto">
+            <form class="shadow p-4 bg-white rounded-3">
+                <div class="mb-3">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Your Message / Travel Question</label>
+                    <textarea class="form-control" rows="4" placeholder="Ask me anything about Bali!"></textarea>
+                </div>
+                <button class="btn w-100 text-white fw-bold" style="background:rgba(51,154, 133);">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-white text-center" style="background:rgba(51, 154, 133);">
+    <p class="mb-0">© 2026 My Indonesia Bali Travel Website | School HTML&Bootstrap Project</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const hiddenGallery = document.getElementById('hiddenGallery');
+    const viewAllBtn = document.getElementById('viewAllBtn');
+
+    viewAllBtn.addEventListener('click', function() {
+        if (hiddenGallery.style.display === 'none') {
+            hiddenGallery.style.display = 'flex';
+            viewAllBtn.textContent = 'Show Less';
+        } else {
+            hiddenGallery.style.display = 'none';
+            viewAllBtn.textContent = 'View All Photos';
+        }
+    });
+</script>
+</body>
+</html>                      
